@@ -7,7 +7,7 @@ const publicPath = path.resolve(__dirname, './public');
 app.use(express.static(publicPath));
 //para que levante en Heroku
 const port = process.env.PORT;
-app.listen(puerto || 3030,() => console.log('Levantando un servidor con Express en el puerto 3030'));
+app.listen(puerto || 3000,() => console.log('Levantando un servidor con Express en el puerto 3000'));
  
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname,'/views/home.html'))
