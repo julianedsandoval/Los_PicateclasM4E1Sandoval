@@ -7,7 +7,7 @@ const publicPath = path.resolve(__dirname, './public');
 app.use(express.static(publicPath));
 app.listen(3030,() => console.log('Levantando un servidor con Express'));
  
-app.get('/home', (req, res) => {
+app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname,'/views/home.html'))
 });
 
