@@ -5,7 +5,9 @@ const app = express ();
 const publicPath = path.resolve(__dirname, './public');
 // para que encuentre las imagenes y css en la carpeta public como un recurso de archivos estáticos
 app.use(express.static(publicPath));
-app.listen(3030,() => console.log('Levantando un servidor con Express'));
+//para que levante en Heroku
+const port = process.env.PORT;
+app.listen(puerto || 3030,() => console.log('Levantando un servidor con Express en el puerto 3030'));
  
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname,'/views/home.html'))
