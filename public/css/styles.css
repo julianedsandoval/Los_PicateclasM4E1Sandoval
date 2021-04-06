@@ -410,11 +410,11 @@ footer h5 {
     }
 
     footer section i:hover {
-        color: #0022AA;
-        font-size: 38px; 
+        color:#39b54a;
+        font-size: 35px; 
     }
 
-    footer #flex-footer {
+    footer .flex-footer {
         display: flex;
         justify-content: space-around;
     }
